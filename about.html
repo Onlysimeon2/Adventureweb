@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="ctn"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+
+    <script>
+        
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <section class="home-about">
+        <div class="image">
+            <img src="img/about-img.jpg" alt="">
+        </div>
+
+    <div class="content">
+        <h3>About us</h3>
+        <p>The company itself is a very successful company. It is expedient and, to refuse us, escapes the way 
+           to be assumed by some, no one repels a matter to follow something, but the wisest himself? For us, they provide pleasure</p>
+           <a href="book-ticket.html" class="ctn-3">Book Ticket</a>
+        </div>
+    </section>
+    <footer>
+        <h2 class="logo-1">Power by <br> Only_Simeon</h2>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.facebook.com/login.php/"> <ion-icon name="logo-facebook"></ion-icon"><a></li>
+        <li><a href="https://twitter.com/login?lang=en"> <ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/"> <ion-icon name="logo-instagram"></ion-icon></a></li>
+        <p>Privacy Policy</p>
+        <p>Copyright &copy 2023 Adventure.com | Copyright 2023 Adventure, LLC</p>
+        </footer>
+</body>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<style>
+     a{
+        text-decoration: none;
+        color: whitesmoke;
+   }
+   ul{
+    list-style: none; 
+   }
+   .active{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+   }
+   body , html{
+    overflow-x: hidden;
+   }
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+    .home-about{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .home-about .image{
+        flex: 1 1 41rem;
+    }
+    .home-about .image img{
+        width: 100%;
+    }
+    .home-about .content{
+        flex: 1 1 41rem;
+        padding: 3rem;
+        background: var(--light-bg);
+    }
+    .home-about .content h3{
+        font-size: 3rem;
+        color: var(--black);
+        font-family: sans-serif;
+    }
+    .home-about .content p{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        line-height: 2;
+        color: var(--black);
+        background-color: #e4e0e0;
+    }
+    .ctn-3{
+        padding: 8px 15px;
+        background: black;
+        color: whitesmoke;
+        text-decoration: none;
+        width: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    footer{
+        width: 100%;
+        min-height: 100px;
+        background: #484872;
+        color: whitesmoke;
+        list-style: none;
+    }
+    footer li a{
+        text-decoration: none;
+        list-style: none;
+        padding: 20px;
+        font-weight: bolder;
+    }
+    footer p{
+       padding: 20px;
+       font-style: italic;
+    }
+    .logo-1{
+        margin-bottom: 25px;
+        padding: 20px;
+        color: rgb(158, 10, 10);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: oblique;
+        font-weight: bolder;
+    }
+    @media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    footer li a{
+            color: rgb(207, 197, 197);
+            font-size: 20px;
+        }
+
+</style>
+</html>

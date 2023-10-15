@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="ctn"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="book-ticket.html" class="ctn">Book Now</a>
+        </div>
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img11.jpg" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Plan your trek to Everest Base Camp with this complete guide to permits, costs, seasons, altitude sickness, porters and what to expect at</p>
+                <a href="book-ticket.html" class="ctn">Book Ticket</a>
+            </div>
+                <div class="col">
+                    <img src="./img/img10.jpg" alt="">
+                    <h4>Walking Holidays</h4>
+                    <p>Walks Worldwide specialise in walking holidays and trekking holidays to all of the world's great trekking destinations. You can join small guided group</p>
+                    <a href="book-ticket.html" class="ctn">Learn More</a>
+                </div>
+        </div>
+    </section>
+    <section class="explore">
+       <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>Explore the world in your way Create memories that you won't forget You only live once, so don't waste your time Please don't waste your time</p>
+        <a href="book-ticket.html" class="ctn">Book Ticket</a>
+       </div> 
+    </section>
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Hope is the destination that we seek. Love is the road that leads to hope. Courage is the motor that drives us. We travel out of darkness into faith</p>
+                <a href="book-ticket.html" class="ctn">Book Ticket</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/about-img.jpg" alt="">
+                    <img src="./img/img13.jpg" alt="">
+                    <img src="./img/img14.jpg" alt="">
+                    <img src="./img/img15.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>Royal fifth Avenue, Osogbo, Osun State |Phone: 814-834-6345 | Email: Ajimotitobiloba02@gmail.com</p>
+        <p>Copyright 2023 Outdoor Adventure</p>
+    </section>
+</body>
+</html>
